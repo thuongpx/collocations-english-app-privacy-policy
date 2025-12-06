@@ -1,0 +1,118 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B8E6D5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A8DCC9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bookGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E7D7B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1B5E5C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bookGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#26A69A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E8A83;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background with gradient -->
+  <rect width="512" height="512" fill="url(#bgGradient)" rx="90"/>
+  
+  <!-- Decorative circles in background -->
+  <circle cx="80" cy="80" r="40" fill="#FFFFFF" opacity="0.1"/>
+  <circle cx="432" cy="100" r="50" fill="#FFFFFF" opacity="0.1"/>
+  <circle cx="450" cy="420" r="35" fill="#FFFFFF" opacity="0.15"/>
+  <circle cx="60" cy="450" r="45" fill="#FFFFFF" opacity="0.1"/>
+  
+  <!-- Main book icon (larger, more centered) -->
+  <g transform="translate(106, 86)" filter="url(#shadow)">
+    <!-- Left page shadow -->
+    <rect x="3" y="3" width="140" height="180" rx="12" fill="#000000" opacity="0.2"/>
+    
+    <!-- Left page (darker green) -->
+    <rect x="0" y="0" width="140" height="180" rx="12" fill="url(#bookGradient1)"/>
+    
+    <!-- Right page shadow -->
+    <rect x="143" y="3" width="160" height="180" rx="12" fill="#000000" opacity="0.2"/>
+    
+    <!-- Right page (lighter green) -->
+    <rect x="140" y="0" width="160" height="180" rx="12" fill="url(#bookGradient2)"/>
+    
+    <!-- Spine/binding with depth -->
+    <rect x="135" y="0" width="10" height="180" fill="#1B5E5C"/>
+    <rect x="137" y="0" width="2" height="180" fill="#FFFFFF" opacity="0.3"/>
+    
+    <!-- Star with glow -->
+    <g transform="translate(25, 25)">
+      <circle cx="12" cy="12" r="18" fill="#FFD54F" opacity="0.3"/>
+      <path d="M 12 2 L 14.5 10 L 23 10 L 16.5 15.5 L 19 24 L 12 18.5 L 5 24 L 7.5 15.5 L 1 10 L 9.5 10 Z" fill="#FFB300"/>
+      <path d="M 12 5 L 13.5 10.5 L 19 10.5 L 14.5 14 L 16 20 L 12 16.5 L 8 20 L 9.5 14 L 5 10.5 L 10.5 10.5 Z" fill="#FFC107" opacity="0.8"/>
+    </g>
+    
+    <!-- Letters A, B, C, D on left page with better spacing -->
+    <text x="35" y="75" font-family="'Arial Black', sans-serif" font-size="32" font-weight="900" fill="#FFFFFF">A</text>
+    <text x="35" y="110" font-family="'Arial Black', sans-serif" font-size="32" font-weight="900" fill="#FFFFFF" opacity="0.9">B</text>
+    <text x="35" y="145" font-family="'Arial Black', sans-serif" font-size="32" font-weight="900" fill="#FFFFFF" opacity="0.8">C</text>
+    
+    <!-- Lines on right page (more and better styled) -->
+    <line x1="160" y1="40" x2="280" y2="40" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="160" y1="65" x2="270" y2="65" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    <line x1="160" y1="90" x2="280" y2="90" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="160" y1="115" x2="265" y2="115" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    <line x1="160" y1="140" x2="280" y2="140" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    
+    <!-- Decorative dots on right page -->
+    <circle cx="155" cy="40" r="4" fill="#FFB300"/>
+    <circle cx="155" cy="90" r="4" fill="#FFB300"/>
+    <circle cx="155" cy="140" r="4" fill="#FFB300"/>
+    
+    <!-- Pencil icon (larger and more detailed) -->
+    <g transform="translate(245, 25) rotate(35 15 15)">
+      <!-- Pencil shadow -->
+      <rect x="8" y="2" width="14" height="35" rx="2" fill="#000000" opacity="0.2"/>
+      <!-- Pencil wood part -->
+      <rect x="6" y="0" width="14" height="35" rx="2" fill="#FF9800"/>
+      <!-- Pencil stripe -->
+      <rect x="6" y="0" width="7" height="35" rx="2" fill="#FB8C00"/>
+      <!-- Pencil tip holder (metal) -->
+      <rect x="6" y="35" width="14" height="6" fill="#9E9E9E"/>
+      <rect x="6" y="35" width="7" height="6" fill="#BDBDBD"/>
+      <!-- Pencil tip -->
+      <polygon points="13,41 6,48 20,48" fill="#6D4C41"/>
+      <polygon points="13,45 9,48 17,48" fill="#4E342E"/>
+      <!-- Pencil eraser -->
+      <ellipse cx="13" cy="-2" rx="7" ry="3" fill="#FF6B9D"/>
+      <!-- Pencil metal band -->
+      <rect x="6" y="-4" width="14" height="3" fill="#E0E0E0"/>
+    </g>
+    
+    <!-- Page corner fold effect -->
+    <polygon points="280,0 300,0 300,20" fill="#1E8A83" opacity="0.6"/>
+  </g>
+  
+  <!-- Text at bottom: "Learning English by Collocations" -->
+  <g transform="translate(256, 340)">
+    <text x="0" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="36" font-weight="700" fill="#1B5E5C" text-anchor="middle">Learning English</text>
+    <text x="0" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" fill="#2E7D7B" text-anchor="middle" opacity="0.9">by Collocations</text>
+  </g>
+  
+  <!-- Small decorative elements around icon -->
+  <circle cx="90" cy="256" r="8" fill="#FFB300" opacity="0.6"/>
+  <circle cx="422" cy="256" r="10" fill="#FFF59D" opacity="0.5"/>
+  <circle cx="256" cy="90" r="6" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="256" cy="422" r="7" fill="#FFD54F" opacity="0.5"/>
+  
+  <!-- Sparkle effects -->
+  <g transform="translate(370, 150)">
+    <path d="M 0,-8 L 1,0 L 8,1 L 1,2 L 0,10 L -1,2 L -8,1 L -1,0 Z" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+  <g transform="translate(140, 380)">
+    <path d="M 0,-6 L 0.7,0 L 6,0.7 L 0.7,1.4 L 0,8 L -0.7,1.4 L -6,0.7 L -0.7,0 Z" fill="#FFF59D" opacity="0.7"/>
+  </g>
+  <g transform="translate(390, 350)">
+    <path d="M 0,-5 L 0.5,0 L 5,0.5 L 0.5,1 L 0,6 L -0.5,1 L -5,0.5 L -0.5,0 Z" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+</svg>
